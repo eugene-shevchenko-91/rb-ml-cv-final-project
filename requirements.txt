@@ -1,0 +1,2 @@
+# TODO: Liat all the needed deps
+pillow-simd
