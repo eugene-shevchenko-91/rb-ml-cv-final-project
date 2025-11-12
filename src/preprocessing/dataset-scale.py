@@ -3,8 +3,8 @@ from PIL import Image
 
 S = 320
 # S = 240
-SRC = Path("../../data/chest_xray/chest_xray")
-DST = Path(f"../../data/chest_xray/chest_xray_{S}")
+SRC = Path("../../data/chest_xray")
+DST = Path(f"../../data/chest_xray_{S}")
 
 for f in SRC.rglob("*.jpeg"):
     rel = f.relative_to(SRC)
