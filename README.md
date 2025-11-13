@@ -1,0 +1,19 @@
+### Structure
+- `./data/` - external dataset must be uploaded here
+  - https://www.kaggle.com/datasets/paultimothymooney/chest-xray-pneumonia/data
+- `./src/preprocessing/` - scripts for images resizing for experiments convenience - smaller images
+- `./model/` - trained models
+  - **model-1.keras** - Custom model built using experiments
+  - **model-2-cv.keras** - The same model but trained using Hyperparameters got from Cross Validation
+    - **P.S.**: The CV did't finished, the process was running too long (around 8 hours). So I've interrupted it and got the latest best params it managed to find. 
+  - **resnet50_finetune.keras** - Fine-tuned model based on pre-trained ResNet-50
+    - https://drive.google.com/file/d/1vPEk6Jh5uwGrYVoa5YxP1th3ubqa2gSl/view?usp=sharing
+    - https://drive.google.com/file/d/1wpF7zlsz0ia7qzwWvyZJZdFNbjKLf4LY/view?usp=sharing
+- `./notebooks/` - Jupiter notebooks
+  - **eda.ipynb** - Exploratory Data Analysis
+  - **modeling.ipynb** - First custom model training
+  - **modeling-cv.ipynb** - Cross-validation
+  - **modeling-cv-train-using-best-params.ipynb** - Training original model using best Hyperparams
+  - **modeling-cv-train-using-best-params.ipynb** - Training original model using best Hyperparams
+  - **fine-tuning.ipynb** - Fine-tuning the ResNet-50
+  - **fine-tuning-from-colab.ipynb** - The same notebook, but executed in Colab
